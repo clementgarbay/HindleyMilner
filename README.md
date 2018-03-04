@@ -10,14 +10,6 @@ Ce travail se base sur une analyse du chapitre 7 "Hindley-Milner Inference" de [
 - Clément GARBAY
 - Damien RAYMOND
 
-
-
-
-
-## Logs
-
-L'ensemble des logs des différentes sessions et réunions est disponible [ici](https://github.com/anaelChardan/IMT-Recherche/blob/master/LOGS.md).
-
 ## REPL
 
 ### Commandes
@@ -127,7 +119,7 @@ Un package `inference` qui contient toute la logique de l'inférence de type.
 
 On peut retrouver un package `ast` qui lui va contenir tous les éléments qui composent une expression à savoir :
 
-![inference](./IMAGES/inference.png)
+![inference](./resources/inference.png)
 
  - Application / Lambda / Let / Literal / Variable / **BinaryExpression / If**
     - Ces éléments sont inférables : retourne un type
@@ -136,7 +128,7 @@ On peut retrouver un package `ast` qui lui va contenir tous les éléments qui c
 
 Ce package `type` contient tous les types qui vont pouvoir être inférés
 
-![class_diagram_type](./IMAGES/class_diagram_type.jpg)
+![class_diagram_type](./resources/class_diagram_type.jpg)
 
  - ArrowType / BooleanType / Integer / Boolean / Literal / Variable
     - Ces types sont généralizable c'est-à-dire qu'ils peuvent être convertis en un autre type en fermant toutes les variables libres dans un schéma de type.
@@ -161,4 +153,4 @@ Nous avons également utilisé [Vavr](http://www.vavr.io/) qui permet d'avoir un
 
 Ce diagramme de séquence présente le flow d'exécution de notre algorithme :
 
-![sequence](./IMAGES/sequence.jpg)
+![sequence](./resources/sequence.jpg)
