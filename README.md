@@ -1,4 +1,4 @@
-# Sensibilisation à la recherche
+# Hindley Milner
 
 Le projet est une implémentation de l'algorithme d'inférence de type de Hindley Milner en Java.
 
